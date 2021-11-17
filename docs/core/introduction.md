@@ -8,6 +8,8 @@ recommendations: false
 ---
 # Introduction to .NET
 
+Another review
+
 .NET is a free, open-source development platform for building many kinds of apps, such as:
 
 * [Web apps, web APIs, and microservices](/aspnet/core/introduction-to-aspnet-core#recommended-learning-path)
@@ -285,9 +287,9 @@ For more information, see the [Runtime libraries overview](../standard/runtime-l
 Libraries for some commonly used application functionality aren't included in the runtime libraries but are made available in NuGet packages, such as the following:
 
 | NuGet package | Documentation |
-|---------|---------|
+| --- | --- |
 | [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) | [Application lifetime management (Generic Host)](extensions/generic-host.md) |
-| [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) | [Dependency injection (DI)](extensions/dependency-injection.md)
+| [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) | [Dependency injection (DI)](extensions/dependency-injection.md) |
 | [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) | [Configuration](extensions/configuration.md) |
 | [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) | [Logging](extensions/logging.md) |
 | [Microsoft.Extensions.Options](https://www.nuget.org/packages/Microsoft.Extensions.Options) | [Options pattern](extensions/options.md) |
@@ -332,42 +334,47 @@ Some of the terminology for .NET can be confusing because the same word is used 
 
 * **runtime**
 
-  |Context  |"runtime" meaning |
-  |---------|---------|
-  | [Common Language Runtime (CLR)](#clr)| The execution environment for a managed program. The OS is part of the runtime environment but isn't part of the .NET runtime. |
+  | Context | "runtime" meaning |
+  | --- | --- |
+  | [Common Language Runtime (CLR)](#clr) | The execution environment for a managed program. The OS is part of the runtime environment but isn't part of the .NET runtime. |
   | [.NET runtime on the .NET download page](https://dotnet.microsoft.com/download/dotnet) | The [CLR](#clr) and [runtime libraries](#runtime-libraries), which together provide support for running [framework-dependent](#deployment-models) apps. The page also offers runtime choices for ASP.NET Core server apps and Windows desktop apps. |
   | [Runtime Identifier (RID)](rid-catalog.md) | The OS platform and CPU architecture that a .NET app runs on. For example: Windows x64, Linux x64. |
+  
 
 * **framework**
 
-  |Context  | "framework" meaning |
-  |---------|---------------------|
+  | Context | "framework" meaning |
+  | --- | --- |
   | .NET Framework | The original, Windows-only implementation of .NET. "Framework" is capitalized. |
   | target framework | The collection of APIs that a .NET app or library relies on. Examples: .NET Core 3.1, .NET Standard 2.0 |
-  | Target Framework Moniker (TFM)  | A TFM is a standardized token format for specifying the target framework of a .NET app or library. Example: `net462` for .NET Framework 4.6.2. |
+  | Target Framework Moniker (TFM) | A TFM is a standardized token format for specifying the target framework of a .NET app or library. Example: `net462` for .NET Framework 4.6.2. |
   | framework-dependent app | An app that can only run on a machine where you've installed the runtime from the [.NET download page](https://dotnet.microsoft.com/download/dotnet). "Framework" in this usage is the same thing as the "runtime" that you download from the .NET download page. |
   | framework libraries | Sometimes used as a synonym for [runtime libraries](#runtime-libraries). |
+  
 
 * **SDK**
 
-  |Context  | "SDK" meaning |
-  |---------|---------------|
-  | [SDK on the .NET download page](#sdk-and-runtimes)  | A collection of tools and libraries that you download and install to develop and run .NET apps. Includes the CLI, MSBuild, the .NET runtime, and other components.|
+  | Context | "SDK" meaning |
+  | --- | --- |
+  | [SDK on the .NET download page](#sdk-and-runtimes) | A collection of tools and libraries that you download and install to develop and run .NET apps. Includes the CLI, MSBuild, the .NET runtime, and other components. |
   | [SDK-style project](#project-system-and-msbuild) | A set of MSBuild targets and tasks that specifies how to build a project for a particular app type. The SDK in this sense is specified by using the `Sdk` attribute of the `Project` element in a project file. |
+  
 
 * **platform**
 
-  |Context  | "platform" meaning |
-  |---------|--------------------|
+  | Context | "platform" meaning |
+  | --- | --- |
   | cross platform | In this term, "platform" means an operating system and the hardware it runs on, such as Windows, macOS, Linux, iOS, and Android. |
   | .NET platform | Usage varies. The reference may be to one implementation of .NET (such as .NET Framework or .NET 5) or to an overarching concept of .NET including all implementations. |
+  
 
 * **CLI**
 
-  |Acronym for | Meaning |
-  |------------|---------|
+  | Acronym for | Meaning |
+  | --- | --- |
   | [Command Line Interface](tools/index.md) | A cross-platform toolchain for developing, building, running, and publishing .NET applications. |
   | [Common Language Infrastructure](https://www.ecma-international.org/publications-and-standards/standards/ecma-335/) | A specification that the [CLR](#clr) implements. |
+  
 
 For more information about .NET terminology, see the [.NET glossary](../standard/glossary.md).
 
